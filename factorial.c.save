@@ -62,9 +62,7 @@ PyMODINIT_FUNC PyInit_factorial(void){
 
 static PyObject *unknownError;
 initunknown(void){
-        PyObject *m;
-        spam Error = PyErr_NewException("unknown.error", NULL, NULL);
-        Py_INCREF(unknownError);
+	PyObject *m;
+	spam Error = PyErr_NewException("unknown.error", NULL, NULL);
+	Py_INCREF(spamError);
 	PyModule_AddObject(m, "error", spamError);
-}
-
